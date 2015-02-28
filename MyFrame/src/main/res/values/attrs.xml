@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground_pull" format="reference|color" />
+        <attr name="headerTextColor_pull" format="color" />
+        <attr name="mode_pull">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius_pull" format="dimension" />
+        <attr name="centered_pull" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TitleFlowIndicator">
+        <attr name="titlePadding_pull" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding_pull" format="dimension" />
+        <attr name="selectedColor_pull" format="color" />
+        <attr name="selectedBold_pull" format="boolean" />
+        <attr name="selectedSize" format="dimension" />
+        <attr name="footerLineHeight_pull" format="dimension" />
+        <attr name="footerColor_pull" format="color" />
+        <attr name="footerTriangleHeight_pull" format="dimension" />
+        <attr name="customTypeface" format="string" />
+    </declare-styleable>
+    <!-- TODO: implement modes
+    <declare-styleable name="SlideExpandableListView">
+        <attr name="mode">
+            <flag name="single" value="0" />
+            <flag name="multiple" value="1" />
+        </attr>
+    </declare-styleable>
+    -->
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:paddingTop="10.0dip"
+    android:paddingBottom="10.0dip">
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/header_size"
+        android:textColor="@color/gray"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="@string/pull_to_refresh_pull_label"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:layout_width="@dimen/header_image_height"
+        android:layout_height="@dimen/header_image_height"
+        android:layout_marginRight="80.0dip"
+        android:layout_toLeftOf="@+id/pull_to_refresh_text"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/pull_to_refresh_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleSmallInverse" />
+    </FrameLayout>
+</RelativeLayout>
